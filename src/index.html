@@ -1,17 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-
-</body>
-
+  <body>
+    <h1>ROCK PAPER SCISSORS</h1>
+    <h2>Escoge tu arma y acepta el reto</h2>
+    <button onclick="Restart()">Restart Game</button>
+    <div class="container">
+      <div class="grid">
+        <img
+          id="element-1"
+          class="rock aumento"
+          src="./assets/rock-golem-svgrepo-com.svg"
+          alt=""
+          onclick="Game(this)"
+        />
+        <img
+          id="element-2"
+          class="scissors aumento"
+          src="./assets/scissors-5-svgrepo-com.svg"
+          alt=""
+          onclick="Game(this)"
+        />
+        <img
+          id="element-3"
+          class="paper aumento"
+          src="./assets/paper-crane-svgrepo-com.svg"
+          alt=""
+          onclick="Game(this)"
+        />
+        <img
+          id="element-4"
+          class=""
+          src="./assets/vs-button-svgrepo-com.svg"
+          alt=""
+        />
+        <img
+          id="element-5"
+          class=""
+          src="./assets/skull-svgrepo-com.svg"
+          alt=""
+        />
+        <p id="message"></p>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="components/jquery-3.7.1.min.js"></script>
+  </body>
 </html>
